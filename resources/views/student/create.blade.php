@@ -115,13 +115,11 @@
 <!--                          <a class="btn btn-block btn-primary btn-sm font-weight-medium" href="{{url('select_location' .'?lang=' .app()->getLocale())}}">select Location</a>
  -->                              <div class="row">
                                       <div class="form-group name1 col-md-3">
-                                          <label for="exampleInputEmail1" class="formText">Lat</label>
-                                 <input type="text" class="form-control" name="lat" id="lat" aria-describedby="emailHelp" value="{{session()->has('lat') ? Session::get('lat') : ''  }}">
+                                 <input type="hidden" class="form-control" name="lat" id="lat" aria-describedby="emailHelp" value="{{session()->has('lat') ? Session::get('lat') : ''  }}">
                                       </div>
 
                                       <div class="form-group name2 col-md-3">
-                                          <label for="exampleInputEmail1## Heading ##" class="formText">Long </label>
-                                          <input type="text" class="form-control" name="lng" id="lng"  aria-describedby="emailHelp" value="{{session()->has('lng') ? Session::get('lng') : ''  }}">
+                                          <input type="hidden" class="form-control" name="lng" id="lng"  aria-describedby="emailHelp" value="{{session()->has('lng') ? Session::get('lng') : ''  }}">
                                       </div>
                                   </div>
                                                       
