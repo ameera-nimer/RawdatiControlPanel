@@ -110,7 +110,7 @@ class StudentController extends Controller
                  
                 Mail::send(['text'=>'mail'], $data, function($message) use($request) {
                   $email_address = $request['email'] ;
-                   $message->to($email_address, 'Tutorials Point')->subject
+                   $message->to($email_address, 'Registration Message')->subject
                       ('Rawdati App');
                    $message->from('ameera.alanqar@gmail.com','Rawdati App');
                    

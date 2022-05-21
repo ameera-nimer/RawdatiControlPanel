@@ -74,15 +74,7 @@ public function get_attendance(Request $request){
              $attendances[$key]  = $value;
             }
 
-            /*if ($day == -1 || $month == -1) {
-              $attendances = $this->database->getReference("attendances")->getValue();
-              return view('attendance');
-         
-            }
-           elseif ( strcmp($value['date'], $date)) {
-              //dd($value['name']) ;
-             $attendances[$key]  = $value;
-            }*/
+           
           }
             return view('attendance')->with('attendances',$attendances)->with('students' ,$students )->with('isFirst' , false);
       }
